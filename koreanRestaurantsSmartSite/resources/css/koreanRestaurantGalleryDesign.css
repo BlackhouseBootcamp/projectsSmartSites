@@ -1,5 +1,5 @@
-.gallery {
-
+  /* Gallery Design */
+  .gallery {
     padding: 2px;
     transition: 0.3s;
   }
@@ -44,6 +44,7 @@
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
     transition: 0.3s;
   }
+  /* Media Query Greater than Medium */
   @media only screen and (min-width: 768px) {
     .gallery__column {
         display: flex;
@@ -52,6 +53,7 @@
         
       }
   }
+  /* Media Query less than Medium */
   @media only screen and (max-width: 768px) {
     .gallery__column {
         display: flex;
