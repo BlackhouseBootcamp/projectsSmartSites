@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" class="w-full overflow-x-hidden">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="Resources/Javascript/tailwindConfig.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Resources/CSS/Hamburger.css">
+</head>
+<body class="w-full overflow-x-hidden">
+    <nav class="fixed w-full text-primaryText z-50 mb-10" style="font-family: 'Philosopher', sans-serif;">
+        <div class="bg-gradient-to-b from-tertiary via-secondaryBackground to-primaryLight py-2">
+            <div class="container mx-auto md:p-2">
+                <div class="flex items-center justify-between p-2 md:p-0">
+                    <div class="w-1/4">
+                        <img src="Resources/Logo/HotelLogoNameLandscape.png" class="md:w-1/2" alt="">
+                    </div>
+                    <div class="w-3/4 space-x-6 ml-48 hidden md:block ">
+                        <a href="#" class="hover:text-quaternary select-none">Home</a>
+                        <a href="Resources/HTML/Room-and-Suites.html" class="hover:text-quaternary select-none">Rooms & Suites</a>
+                        <a href="Resources/HTML/Dining.html" class="hover:text-quaternary select-none">Dining</a>
+                        <a href="Resources/HTML/Guest-Services.html" class="hover:text-quaternary select-none">Guest Services</a>
+                        <a href="Resources/HTML/Experience.html" class="hover:text-quaternary select-none">Experience</a>
+                        <a href="#" class="hover:text-quaternary select-none">Photo Gallery</a>
+                    </div>
+                    <div class="w-2/6 mx-auto hidden md:block">
+                        <button class="ml-40 border border-2 border-primaryText rounded-md p-3 hover:text-quaternary hover:border-quaternary select-none">Book Now</button>
+                    </div>
+                    <button id="menu-btn" class="block hamburger md:hidden focus:outline-none text-primaryText mr-8">
+                        <span class="hamburger-top text-primaryText"></span>
+                        <span class="hamburger-middle text-primaryText"></span>
+                        <span class="hamburger-bottom text-primaryText"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="md:hidden">
+            <div id="menu" class="absolute flex-col items-center self-end py-7 hidden space-y-6 font-bold bg-secondaryBackground sm:w-auto sm:self-center left-6 right-6 drop-shadow-md text-primaryText">
+                <a href="#" class="hover:text-quaternary">Home</a>
+                <a href="Resources/HTML/Room-and-Suites.html" class="hover:text-quaternary select-none">Rooms & Suites</a>
+                <a href="Resources/HTML/Dining.html" class="hover:text-quaternary select-none">Dining</a>
+                <a href="Resources/HTML/Guest-Services.html" class="hover:text-quaternary select-none">Guest Services</a>
+                <a href="Resources/HTML/Experience.html" class="hover:text-quaternary select-none">Experience</a>
+                <a href="#" class="hover:text-quaternary">Photo Gallery</a>
+                <button class="border border-2 border-primaryText rounded-md p-3 hover:text-quaternary hover:border-quaternary">Book Now</button>
+            </div>
+        </div>
+    </nav>
+    <!-- Introduction -->
+    <section class="relative pt-64 md:pt-48 md:pt-24">
+        <div class="container p-8 mx-auto">
+            <h1 class="text-6xl text-primaryText mx-auto text-center py-12 pb-24 select-none" style="font-family: 'Great Vibes', cursive;">Welcome to Blackhouse Grand Hotel</h1>
+            <div class="md:flex md:items-center md:justify-between pb-40">
+                
+                <div class="container text-2xl text-primaryText text-justify select-none" style="font-family: 'Philosopher', sans-serif;">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptatibus ad minima perspiciatis eaque, est, facere in sed placeat asperiores molestiae sunt iste, rerum suscipit quasi! Libero mollitia quam fuga ad impedit, sapiente ipsa doloribus placeat totam ducimus vel, beatae eos velit voluptatibus ipsam voluptates nemo accusantium rem veniam qui molestias commodi neque? Velit ratione sit, rerum repellat inventore alias reprehenderit voluptatibus placeat earum illum? Quibusdam illum culpa aliquid iste.</p>
+                </div>
+                <div class="container">
+                    <img src="Resources/Logo/HotelLogoPNG.png" class=" mx-auto pb-8 hidden md:block" alt="">
+                </div>
+                <div class="container text-2xl text-primaryText text-justify mt-16 md:mt-0 select-none" style="font-family: 'Philosopher', sans-serif;">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates consequuntur, soluta obcaecati, eaque sequi maxime nesciunt, sint quas quibusdam beatae est nam suscipit a accusamus perspiciatis neque inventore? Recusandae ratione quidem veniam laudantium! Temporibus cum vitae facere id illum pariatur voluptas. Inventore et reprehenderit accusamus id error ratione obcaecati, at maxime porro laborum voluptatem odio deleniti totam temporibus impedit explicabo ea delectus atque accusantium corrupti est molestias eius consequatur quos.</p>
+                </div>
+            </div>  
+            <div class="md:flex md:items-center md:justify-between">
+                <div class="container bg-gradient-to-r z-10 md:hidden block">
+                    <img src="Resources/Pictures/HotelPictures/WallpaperHotel8.png" alt="" class="border border-8 border-secondaryBackground">
+                </div>
+                <div class="container absolute mx-auto py-16 bg-secondaryBackground hidden md:block">
+                    
+                </div>
+                <div class="container z-10">
+                    <h1 style="font-family: 'Great Vibes', cursive;" class="text-4xl text-primaryText ml-3 mt-12 md:mt-0 leading-relaxed select-none">Hotels of the Future where you can experience leisure and tranquility.</h1>
+                </div>
+                <div class="container bg-gradient-to-r z-10 hidden md:block">
+                    <img src="Resources/Pictures/HotelPictures/WallpaperHotel8.png" alt="" class="border border-8 border-secondaryBackground">
+                </div>
+            </div>
+            <div class="md:flex md:items-center md:justify-between mt-32">
+                <div class="container absolute mx-auto py-16 bg-secondaryBackground hidden md:block">
+                    
+                </div>
+                <div class="container bg-gradient-to-r z-10 md:ml-16">
+                    <img src="Resources/Pictures/HotelPictures/WallpaperHotel6.png" alt="" class="border border-8 border-secondaryBackground">
+                </div>
+                <div class="container z-10">
+                    <h1 style="font-family: 'Great Vibes', cursive;" class="text-4xl text-primaryText md:ml-24 mt-12 md:mt-2 leading-relaxed select-none">Live like a royalty without fretting about what the tomorrow may bring.</h1>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="md:p-36">
+        <div class="container mx-auto">
+            <div class="md:flex md:items-center md:justify-between">
+                <div class="container"></div>
+                <div class="container mx-auto w-3/4 p-5">
+                    <p class="text-xl text-primaryText leading-relaxed select-none" style="font-family: 'Philosopher', sans-serif;">
+                        With an emphasis on barefoot luxury and top-notch cuisine, Grand Hotel BlackHouse, perched atop the sweeping cliffs of Italy's Amalfi Coast, offers a stunning example of contemporary minimalism on the Mediterranean.
+                    </p>
+                    <p class="mt-5 text-xl text-primaryText leading-relaxed select-none" style="font-family: 'Philosopher', sans-serif; ">
+                        Our 64-room hotel acts as a haven, with a light, white-washed style that highlights every place, from the turquoise sea and sky outside to the modern artwork on exhibit inside.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Environment -->
+    <section class="py-12 pb-24 px-6 md:px-0">
+        <div class="container mx-auto text-primaryText bg-tertiary text-3xl py-6 md:px-0 px-6" style="font-family: 'Philosopher', sans-serif;">
+            <h1 class="md:ml-8 underline select-none">Environment</h1>
+        </div>
+        <div class="bg-secondaryBackground mt-12 py-12 px-6 md:px-0">
+            <div class="container mx-auto">
+                <img src="Resources/Pictures/HotelPictures/Hotel75.jpg" alt="" class="md:absolute md:mt-28 pb-5">
+            </div>
+            <div class="md:flex md:align-center md:justify-between container  mx-auto ">
+                <div class="container text-xl text-primaryText mx-auto" style="font-family: 'Philosopher', sans-serif;">
+                    <div class="container mx-auto">
+                        <p class="leading-relaxed select-none">We make sure that every aspect of your stay is spotless, from the soft white Etro Cotton linens that cover your bed to the tastefully arranged herb garnishes on your food.</p>
+                    </div>
+                </div>
+                <div class="container">
+                </div>
+            </div>
+            <div class="md:flex md:align-center md:justify-between pt-24 container mx-auto ">
+                <div class="container">
+                </div>
+                <div class="container pb-6 text-xl text-primaryText" style="font-family: 'Philosopher', sans-serif;">
+                    <p class="leading-relaxed select-none">The rich hues of nature's color palette are highlighted by simple lines and lots of white space. Our boutique hotel's 64 rooms are an airy haven where visitors may rediscover the forgotten rhythms of protracted days and leisurely evenings.</p>
+                </div>
+            </div>
+         </div>
+    </section>
+    <section class="pb-24">
+        <div class="md:flex md:align-center md:justify-between container mx-auto">
+            <div class="container">
+            </div>
+            <div class="container pt-12 text-xl text-primaryText px-6 md:px-0" style="font-family: 'Philosopher', sans-serif;">
+                <p class="leading-relaxed select-none">The ability to momentarily imagine that you are at home in your hotel room is one of the best things about traveling. Like, you've got a king bed with an enormous velvet headboard, linens with a high thread count, and, of course, a marble-tiled bathroom with modern fixtures and a floating tub.</p>
+            </div>
+        </div>
+    </section>
+    <section class=" p-6 md:p-16">
+        <div class="container mx-auto">
+            <div class="md:flex md:align-center justify-between">
+                <div class="container text-primaryText  md:pt-24 text-xl" style="font-family: 'Philosopher', sans-serif;">
+                    <p class="leading-loose select-none">
+                        Anyone could mistake the pleasant mood in our rooms for that of an open area with plenty of fresh air. 
+                    </p>
+                    <p class="pt-5 leading-loose select-none">  
+                        The beds have soft foam, and our quality assurance always inspects the linens before setting them. We guarantee that you will sleep soundly because the pillows are made of feathers.
+                    </p>
+                </div>
+                <div class="container text-primaryText pt-8 text-xl" style="font-family: 'Philosopher', sans-serif;">
+           
+                </div>
+                <div class="container text-primaryText pt-8 text-xl" style="font-family: 'Philosopher', sans-serif;">
+            
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Garden -->
+    <section class="pt-12 pb-12">       
+        <div class=" container mx-auto text-primaryText bg-tertiary text-3xl py-6 md:px-0 px-6" style="font-family: 'Philosopher', sans-serif;">
+            <h1 class="md:ml-8 underline select-none">Garden</h1>
+        </div>
+        <div class="md:absolute hidden md:block w-full mt-32 p-16 bg-secondaryBackground ">
+        </div>
+        <div class="container mx-auto text-primaryText pt-24 text-3xl z-10  px-6 md:px-0" style="font-family: 'Philosopher', sans-serif;">
+            <div class="md:flex md:align-center md:justify-between">
+                <div class="container mx-auto z-10">
+                    <img src="Resources/Pictures/HotelPictures/Garden1.png" alt="">
+                </div>
+                <div class="container mx-auto text-primaryText ml-2 md:ml-12 pt-16 text-xl z-10" style="font-family: 'Philosopher', sans-serif;">
+                    <p class="leading-loose select-none">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis velit sit non neque! Quam, aliquam.
+                    </p>
+                    <p class="pt-12 leading-loose select-none">  
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ipsam optio reprehenderit fugit quod ex vel aperiam. Delectus, veniam? Autem consequuntur odio asperiores aut maxime!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container mx-auto">
+            <div class="md:flex md:items-center md:justify-between">
+                <div class="container pl-6 md:pl-6 pr-6 pb-6 pt-6">
+                    <img src="Resources/Pictures/HotelPictures/Square1.png" alt="">
+                </div>
+                <div class="container p-6 md:pl-8">
+                    <img src="Resources/Pictures/HotelPictures/Square2.png" alt="">
+                </div>
+                <div class="container p-6 md:pl-8">
+                    <img src="Resources/Pictures/HotelPictures/Square3.png" alt="">
+                </div>
+                <div class="container p-6 md:pl-8">
+                    <img src="Resources/Pictures/HotelPictures/Square4.png" alt="">
+                </div>
+            </div>
+            <div class="md:flex md:items-center md:justify-between">
+                <div class="container pb-6 mx-auto text-primaryText md:pt-6 text-xl text-center" style="font-family: 'Philosopher', sans-serif;">
+                   <h1 class="select-none">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ab qui ad adipisci rem modi! Dolores delectus repellat repudiandae natus dolore aperiam incidunt, aliquid rem, rerum blanditiis cumque officia non provident nesciunt magnam sapiente eum reprehenderit cupiditate est id. Provident illo ut nobis quisquam iste cupiditate voluptates ex eos! Beatae.
+                   </h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Room & Suites -->
+    <section class="py-12">
+        <div class=" container mx-auto text-primaryText bg-tertiary text-3xl py-6 md:px-0 px-6" style="font-family: 'Philosopher', sans-serif;">
+            <h1 class="md:ml-8 underline select-none">Room & Suites</h1>
+        </div>
+        <div class="container mx-auto ">     
+            <div class="md:flex md:align-center:md:justify-between ">   
+                <div class="hidden md:block absolute container mx-auto mt-96">
+                    <div class="container mt-48 text-primaryText bg-secondaryBackground text-3xl py-6 "  style="font-family: 'Philosopher', sans-serif;">
+                    <h1 class="md:ml-12 text-xl select-none">Recommended:</h1>
+                    <h1 class="md:ml-12 select-none">Royal Suites</h1>
+                    </div>
+                </div>
+                <div class="container z-10  px-6 md:px-0">
+                    <ul class="list-none list-inside text-primaryText ml-2 mt-8 md:ml-12 pt-18 text-xl space-y-3 select-none" style="font-family: 'Philosopher', sans-serif;">
+                        <li>
+                            Single
+                        </li>
+                        <li>
+                            Double
+                        </li>
+                        <li>
+                            Triple
+                        </li>
+                        <li>
+                            Quad
+                        </li>
+                        <li>
+                            Queen
+                        </li>
+                        <li>
+                            King
+                        </li>
+                        <li>
+                            Twin
+                        </li>
+                        <li>
+                            Hollywood Twin Room
+                        </li>
+                        <li>
+                            Double-double
+                        </li>
+                        <li>
+                            Junior Suite
+                        </li>
+                        <li>
+                            Executive Suite
+                        </li>
+                        <li>
+                            Presidential Suite
+                        </li>
+                        <li>
+                            Executive Floor
+                        </li>
+                    </ul>
+                </div>
+                <div class="block md:hidden container mx-auto pt-12 md:pt-0">
+                    <div class="container text-primaryText bg-secondaryBackground text-3xl py-6 md:px-0 px-6"  style="font-family: 'Philosopher', sans-serif;">
+                        <h1 class="md:ml-12 text-xl">Recommended:</h1>
+                        <h1 class="md:ml-12">Royal Suites</h1>
+                    </div>
+                </div>
+                <div class="container mt-5 ml-16 z-10">
+                    <img src="Resources/Pictures/HotelPictures/RoyalSuites.png" alt="" class="w-4/6">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Room Services -->
+    <section class="py-12">
+        <div class=" container mx-auto text-primaryText bg-tertiary text-3xl py-6 md:px-0 px-6" style="font-family: 'Philosopher', sans-serif;">
+            <h1 class="md:ml-8 underline select-none">Room Services</h1>
+        </div>
+        <div class="container mx-auto pt-12">
+            <div class="md:flex md:items-center md:justify-between">
+                <div class="container mx-auto text-primaryText text-3xl p-12 text-center" style="font-family: 'Philosopher', sans-serif;">
+                    <h1 class="pb-8 select-none">Personal Butler</h1>
+                    <img src="Resources/Pictures/Butler.png" alt="">
+                    <p class="text-xl pt-12 select-none">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat quos asperiores, placeat corporis distinctio delectus possimus rerum dicta ullam iste qui mollitia ad illo earum.</p>
+                </div>
+                <div class="container mx-auto text-primaryText text-3xl p-12 text-center" style="font-family: 'Philosopher', sans-serif;">
+                    <h1 class="pb-8 select-none">Personal Maid</h1>
+                    <img src="Resources/Pictures/Maid.png" alt="">
+                    <p class="text-xl pt-12 select-none">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat quos asperiores, placeat corporis distinctio delectus possimus rerum dicta ullam iste qui mollitia ad illo earum.</p>
+                </div>
+                <div class="container mx-auto text-primaryText text-3xl p-12 text-center" style="font-family: 'Philosopher', sans-serif;">
+                    <h1 class="pb-8 select-none">Doctors on call</h1>
+                    <img src="Resources/Pictures/Doctors.png" alt="" class="md:ml-5">
+                    <p class="text-xl pt-12 select-none">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat quos asperiores, placeat corporis distinctio delectus possimus rerum dicta ullam iste qui mollitia ad illo earum.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto pt-12">
+            <div class="md:flex md:items-center md:justify-between md:space-x-6">
+                <div class="container mx-auto text-primaryText text-3xl md:p-0 p-12 text-center" style="font-family: 'Philosopher', sans-serif;">
+                    <h1 class="pb-8 select-none">Spacious Bathrooms</h1>
+                    <img src="Resources/Pictures/Bathroom.png" alt="">
+                    <p class="text-xl pt-12 select-none">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat quos asperiores, placeat corporis distinctio delectus possimus rerum dicta ullam iste qui mollitia ad illo earum.</p>
+                </div>
+                <div class="container mx-auto text-primaryText text-3xl md:p-0 p-12 text-center " style="font-family: 'Philosopher', sans-serif;">
+                    <h1 class="pb-8 select-none">Capacious Veranda</h1>
+                    <img src="Resources/Pictures/Terrace.png" alt="">
+                    <p class="text-xl pt-12 select-none">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat quos asperiores, placeat corporis distinctio delectus possimus rerum dicta ullam iste qui mollitia ad illo earum.</p>
+                </div>
+                <div class="container mx-auto text-primaryText text-3xl md:p-0 p-12 text-center" style="font-family: 'Philosopher', sans-serif;">
+                    <h1 class="pb-8 select-none">Canopy Beds</h1>
+                    <img src="Resources/Pictures/Beds.png" alt="">
+                    <p class="text-xl pt-12 select-none">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat quos asperiores, placeat corporis distinctio delectus possimus rerum dicta ullam iste qui mollitia ad illo earum.</p>
+                </div>
+                <div class="container mx-auto text-primaryText text-3xl md:p-0 p-12 text-center" style="font-family: 'Philosopher', sans-serif;">
+                    <h1 class="pb-8 select-none">Personal bar in Rooms</h1>
+                    <img src="Resources/Pictures/MiniBar.png" alt="">
+                    <p class="text-xl pt-12 select-none">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat quos asperiores, placeat corporis distinctio delectus possimus rerum dicta ullam iste qui mollitia ad illo earum.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Footer -->
+    <footer class="bg-secondaryBackground">
+        <div class="container text-center mx-auto text-primaryText p-6 " style="font-family: 'Philosopher', sans-serif;">
+            <h1 class="text-xl select-none">Sample Design </h1> <h1 class="select-none "> Credit to the owner of the photos</h1> <a href="/" class="select-none">Designed by: BlackHouse Bootcamp 2022</a>
+         </div>
+    </footer>
+</body>
+<script src="Resources/Javascript/HamburgerTransistion.js"></script>
+</html>

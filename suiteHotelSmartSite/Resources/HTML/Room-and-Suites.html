@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../Javascript/tailwindConfig.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/Hamburger.css">
+</head>
+<body>
+    <nav class="fixed w-full text-primaryText z-50 mb-10" style="font-family: 'Philosopher', sans-serif;">
+        <div class="bg-gradient-to-b from-tertiary via-secondaryBackground to-primaryLight py-2">
+            <div class="container mx-auto md:p-2">
+                <div class="flex items-center justify-between p-2 md:p-0">
+                    <div class="w-1/4 ">
+                        <img src="../Logo/HotelLogoNameLandscape.png" class=" md:w-1/2" alt="">
+                    </div>
+                    <div class="w-3/4 space-x-6 ml-48 hidden md:block ">
+                        <a href="../../Index.html" class="hover:text-quaternary select-none">Home</a>
+                        <a href="../HTML/Room-and-Suites.html" class="hover:text-quaternary select-none">Rooms & Suites</a>
+                        <a href="../HTML/Dining.html" class="hover:text-quaternary select-none">Dining</a>
+                        <a href="../HTML/Guest-Services.html" class="hover:text-quaternary select-none">Guest Services</a>
+                        <a href="../HTML/Experience.html" class="hover:text-quaternary select-none">Experience</a>
+                        <a href="#" class="hover:text-quaternary select-none">Photo Gallery</a>
+                    </div>
+                    <div class="w-2/6 mx-auto hidden md:block">
+                        <button class="ml-40 border border-2 border-primaryText rounded-md p-3 hover:text-quaternary hover:border-quaternary select-none">Book Now</button>
+                    </div>
+                        <button id="menu-btn" class="block hamburger md:hidden focus:outline-none text-primaryText mr-8">
+                            <span class="hamburger-top text-primaryText"></span>
+                            <span class="hamburger-middle text-primaryText"></span>
+                            <span class="hamburger-bottom text-primaryText"></span>
+                        </button>                   
+                </div>
+            </div>
+        </div>
+        <div class="md:hidden">
+            <div id="menu" class="absolute flex-col items-center self-end py-7 hidden space-y-6 font-bold bg-secondaryBackground sm:w-auto sm:self-center left-6 right-6 drop-shadow-md text-primaryText">
+                <a href="#" class="hover:text-quaternary">Home</a>
+                <a href="#" class="hover:text-quaternary">Rooms & Suites</a>
+                <a href="#" class="hover:text-quaternary">Dining</a>
+                <a href="#" class="hover:text-quaternary">Guest Services</a>
+                <a href="#" class="hover:text-quaternary">Experience</a>
+                <a href="#" class="hover:text-quaternary">Photo Gallery</a>
+                <button class="border border-2 border-primaryText rounded-md p-3 hover:text-quaternary hover:border-quaternary">Book Now</button>
+            </div>
+        </div>
+    </nav>
+    <!-- Introduction -->
+    <section class="pt-12 pb-72 bg-opacity-25" style="background-image:url('../Pictures/Background1.jpg'); background-size: cover;">
+        <div class="container mx-auto py-6">
+            <div class="md:flex md:items-center md:justify-between">  
+                <div class="container absolute hidden md:block py-64 mt-32 blur-md bg-gradient-to-t from-tertiary to-primaryLight opacity-70" >
+                </div>
+                <div class="container md:text-primaryText text-bold text-2xl py-12 md:py-0 md:mt-16 z-10 md:ml-10 px-5 md:px-0 bg-gradient-to-t from-tertiary to-primaryLight opacity-70 md:bg-none" style="font-family: 'Philosopher', sans-serif; ">
+                    <h1 class="text-black font-bold text-4xl mt-2">Overview</h1>
+                    <p class="mt-8 ">Each of our spacious, light-filled rooms has everything you could possibly need for a comfortable stay, including free Wi-Fi, Apple iPads, Etro bedding, L'Occitane and Jo Malone products. There are even laptops in certain rooms.</p>
+                    <p class="mt-10">Of course, achieving comfort isn't our only goal. We value forward design as well. The rich hues of nature's color pallet are highlighted by clean lines, modern furnishings, and an abundance of white, which can be seen from the sea-view windows and terraces of our suites</p>
+                    <p class="mt-10">The Blackhouse Bootcamp is for adults only. All kids above the age of 12 are allowed to stay.</p>
+                </div>
+                <div class="container mx-auto items-center justify-between z-10">
+                    <img src="../Pictures/Roses.png" alt="" class=" hidden md:block ml-32 mt-32 opacity-90">
+                </div>
+            </div>   
+        </div>
+    </section>
+    <!-- Rooms -->
+    <section class="text-base">
+        <h1 class="text-4xl py-12 my-12 text-center bg-gradient-to-b from-tertiary via-primaryLight to-tertiary text-primaryText">Rooms & Suites</h1>
+        <div class="container mx-auto text-primaryText " style="font-family: 'Philosopher', sans-serif;">
+            <!-- Single -->
+            <div class="pt-12">
+                <h1 class="text-3xl text-center bg-gradient-to-l from-tertiary via-primaryLight to-tertiary mb-12">Single Room</h1>
+                <div class="md:flex md:items-center md:justify-between py-10">
+                    <div class="container">
+                        <img src="../Pictures/HotelPictures/WallpaperHotel8.png" alt="">
+                    </div>
+                    <div class="container p-12">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi corporis facere nostrum nesciunt quaerat dicta veritatis repudiandae ipsum quibusdam quis. Aliquam eum numquam corporis impedit, sunt, accusantium voluptatem enim vitae deleniti perferendis ipsam? Quia dolore provident blanditiis delectus velit fugiat totam hic quod perferendis maiores, officiis cupiditate voluptatum et quisquam!</p>
+                    </div>
+                </div>
+                <div class="container pb-12 pl-12 md:pl-0">
+                    <h1 class="text-xl">Inclusion:</h1>
+                    <br>
+                    <ul>
+                        <li>
+                            1 Bed
+                        </li>
+                        <li>
+                            1 Bathroom
+                        </li>
+                        <li>
+                            1 Kitchen
+                        </li>
+                        <li>
+                            1 Dining area
+                        </li>
+                        <li>
+                            1 Veranda
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Double -->
+            <div class="pt-12">
+                <h1 class="text-3xl text-center bg-gradient-to-l from-tertiary via-primaryLight to-tertiary mb-12">Double Room</h1>
+                <div class="md:flex md:items-center md:justify-between py-10">
+                    <div class="container block md:hidden">
+                        <img src="../Pictures/HotelPictures/WallpaperHotel8.png" alt="">
+                    </div>
+                    <div class="container p-12 pl-12 md:pl-0 pr-24">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi corporis facere nostrum nesciunt quaerat dicta veritatis repudiandae ipsum quibusdam quis. Aliquam eum numquam corporis impedit, sunt, accusantium voluptatem enim vitae deleniti perferendis ipsam? Quia dolore provident blanditiis delectus velit fugiat totam hic quod perferendis maiores, officiis cupiditate voluptatum et quisquam!</p>
+                    </div>
+                    <div class="container hidden md:block">
+                        <img src="../Pictures/HotelPictures/WallpaperHotel8.png" alt="">
+                    </div>
+                </div>
+                <div class="container pb-12 pl-12 md:pl-0">
+                    <h1 class="text-xl">Inclusion:</h1>
+                    <br>
+                    <ul>
+                        <li>
+                            1 Bed
+                        </li>
+                        <li>
+                            1 Bathroom
+                        </li>
+                        <li>
+                            1 Kitchen
+                        </li>
+                        <li>
+                            1 Dining area
+                        </li>
+                        <li>
+                            1 Veranda
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto text-primaryText " style="font-family: 'Philosopher', sans-serif;">
+            <!-- Triple -->
+            <div class="pt-12">
+                <h1 class="text-3xl text-center bg-gradient-to-l from-tertiary via-primaryLight to-tertiary mb-12">Triple Room</h1>
+                <div class="md:flex md:items-center md:justify-between py-10">
+                    <div class="container">
+                        <img src="../Pictures/HotelPictures/WallpaperHotel8.png" alt="">
+                    </div>
+                    <div class="container p-12">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi corporis facere nostrum nesciunt quaerat dicta veritatis repudiandae ipsum quibusdam quis. Aliquam eum numquam corporis impedit, sunt, accusantium voluptatem enim vitae deleniti perferendis ipsam? Quia dolore provident blanditiis delectus velit fugiat totam hic quod perferendis maiores, officiis cupiditate voluptatum et quisquam!</p>
+                    </div>
+                </div>
+                <div class="container pb-12 pl-12 md:pl-0">
+                    <h1 class="text-xl">Inclusion:</h1>
+                    <br>
+                    <ul>
+                        <li>
+                            1 Bed
+                        </li>
+                        <li>
+                            1 Bathroom
+                        </li>
+                        <li>
+                            1 Kitchen
+                        </li>
+                        <li>
+                            1 Dining area
+                        </li>
+                        <li>
+                            1 Veranda
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Quad -->
+            <div class="pt-12">
+                <h1 class="text-3xl text-center bg-gradient-to-l from-tertiary via-primaryLight to-tertiary mb-12">Quad Room</h1>
+                <div class="md:flex md:items-center md:justify-between py-10">
+                    <div class="container block md:hidden">
+                        <img src="../Pictures/HotelPictures/WallpaperHotel8.png" alt="">
+                    </div>
+                    <div class="container p-12 pl-12 md:pl-0 pr-24">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi corporis facere nostrum nesciunt quaerat dicta veritatis repudiandae ipsum quibusdam quis. Aliquam eum numquam corporis impedit, sunt, accusantium voluptatem enim vitae deleniti perferendis ipsam? Quia dolore provident blanditiis delectus velit fugiat totam hic quod perferendis maiores, officiis cupiditate voluptatum et quisquam!</p>
+                    </div>
+                    <div class="container hidden md:block">
+                        <img src="../Pictures/HotelPictures/WallpaperHotel8.png" alt="">
+                    </div>
+                </div>
+                <div class="container pb-12 pl-12 md:pl-0">
+                    <h1 class="text-xl">Inclusion:</h1>
+                    <br>
+                    <ul>
+                        <li>
+                            1 Bed
+                        </li>
+                        <li>
+                            1 Bathroom
+                        </li>
+                        <li>
+                            1 Kitchen
+                        </li>
+                        <li>
+                            1 Dining area
+                        </li>
+                        <li>
+                            1 Veranda
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto text-primaryText " style="font-family: 'Philosopher', sans-serif;">
+            <!-- Twin -->
+            <div class="pt-12">
+                <h1 class="text-3xl text-center bg-gradient-to-l from-tertiary via-primaryLight to-tertiary mb-12">Twin Room</h1>
+                <div class="md:flex md:items-center md:justify-between py-10">
+                    <div class="container">
+                        <img src="../Pictures/HotelPictures/WallpaperHotel8.png" alt="">
+                    </div>
+                    <div class="container p-12">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi corporis facere nostrum nesciunt quaerat dicta veritatis repudiandae ipsum quibusdam quis. Aliquam eum numquam corporis impedit, sunt, accusantium voluptatem enim vitae deleniti perferendis ipsam? Quia dolore provident blanditiis delectus velit fugiat totam hic quod perferendis maiores, officiis cupiditate voluptatum et quisquam!</p>
+                    </div>
+                </div>
+                <div class="container pb-12 pl-12 md:pl-0">
+                    <h1 class="text-xl">Inclusion:</h1>
+                    <br>
+                    <ul>
+                        <li>
+                            1 Bed
+                        </li>
+                        <li>
+                            1 Bathroom
+                        </li>
+                        <li>
+                            1 Kitchen
+                        </li>
+                        <li>
+                            1 Dining area
+                        </li>
+                        <li>
+                            1 Veranda
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Hollywood Twin -->
+            <div class="pt-12">
+                <h1 class="text-3xl text-center bg-gradient-to-l from-tertiary via-primaryLight to-tertiary mb-12">Hollywood Twin Room</h1>
+                <div class="md:flex md:items-center md:justify-between py-10">
+                    <div class="container block md:hidden">
+                        <img src="../Pictures/HotelPictures/WallpaperHotel8.png" alt="">
+                    </div>
+                    <div class="container p-12 pl-12 md:pl-0 pr-24">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi corporis facere nostrum nesciunt quaerat dicta veritatis repudiandae ipsum quibusdam quis. Aliquam eum numquam corporis impedit, sunt, accusantium voluptatem enim vitae deleniti perferendis ipsam? Quia dolore provident blanditiis delectus velit fugiat totam hic quod perferendis maiores, officiis cupiditate voluptatum et quisquam!</p>
+                    </div>
+                    <div class="container hidden md:block">
+                        <img src="../Pictures/HotelPictures/WallpaperHotel8.png" alt="">
+                    </div>
+                </div>
+                <div class="container pb-12 pl-12 md:pl-0">
+                    <h1 class="text-xl">Inclusion:</h1>
+                    <br>
+                    <ul>
+                        <li>
+                            1 Bed
+                        </li>
+                        <li>
+                            1 Bathroom
+                        </li>
+                        <li>
+                            1 Kitchen
+                        </li>
+                        <li>
+                            1 Dining area
+                        </li>
+                        <li>
+                            1 Veranda
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto text-primaryText " style="font-family: 'Philosopher', sans-serif;">
+            <!-- Double Double -->
+            <div class="pt-12">
+                <h1 class="text-3xl text-center bg-gradient-to-l from-tertiary via-primaryLight to-tertiary mb-12">Double Double Room</h1>
+                <div class="md:flex md:items-center md:justify-between py-10">
+                    <div class="container">
+                        <img src="../Pictures/HotelPictures/WallpaperHotel8.png" alt="">
+                    </div>
+                    <div class="container p-12">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi corporis facere nostrum nesciunt quaerat dicta veritatis repudiandae ipsum quibusdam quis. Aliquam eum numquam corporis impedit, sunt, accusantium voluptatem enim vitae deleniti perferendis ipsam? Quia dolore provident blanditiis delectus velit fugiat totam hic quod perferendis maiores, officiis cupiditate voluptatum et quisquam!</p>
+                    </div>
+                </div>
+                <div class="container pb-12 pl-12 md:pl-0">
+                    <h1 class="text-xl">Inclusion:</h1>
+                    <br>
+                    <ul>
+                        <li>
+                            1 Bed
+                        </li>
+                        <li>
+                            1 Bathroom
+                        </li>
+                        <li>
+                            1 Kitchen
+                        </li>
+                        <li>
+                            1 Dining area
+                        </li>
+                        <li>
+                            1 Veranda
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Studio -->
+            <div class="pt-12">
+                <h1 class="text-3xl text-center bg-gradient-to-l from-tertiary via-primaryLight to-tertiary mb-12">Studio Room</h1>
+                <div class="md:flex md:items-center md:justify-between py-10">
+                    <div class="container block md:hidden">
+                        <img src="../Pictures/HotelPictures/WallpaperHotel8.png" alt="">
+                    </div>
+                    <div class="container p-12 pl-12 md:pl-0 pr-24">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi corporis facere nostrum nesciunt quaerat dicta veritatis repudiandae ipsum quibusdam quis. Aliquam eum numquam corporis impedit, sunt, accusantium voluptatem enim vitae deleniti perferendis ipsam? Quia dolore provident blanditiis delectus velit fugiat totam hic quod perferendis maiores, officiis cupiditate voluptatum et quisquam!</p>
+                    </div>
+                    <div class="container hidden md:block">
+                        <img src="../Pictures/HotelPictures/WallpaperHotel8.png" alt="">
+                    </div>
+                </div>
+                <div class="container pb-12 pl-12 md:pl-0">
+                    <h1 class="text-xl">Inclusion:</h1>
+                    <br>
+                    <ul>
+                        <li>
+                            1 Bed
+                        </li>
+                        <li>
+                            1 Bathroom
+                        </li>
+                        <li>
+                            1 Kitchen
+                        </li>
+                        <li>
+                            1 Dining area
+                        </li>
+                        <li>
+                            1 Veranda
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto text-primaryText " style="font-family: 'Philosopher', sans-serif;">
+            <!-- Queen -->
+            <div class="pt-12">
+                <h1 class="text-3xl text-center bg-gradient-to-l from-tertiary via-primaryLight to-tertiary mb-12">Queen Room</h1>
+                <div class="md:flex md:items-center md:justify-between py-10">
+                    <div class="container">
+                        <img src="../Pictures/HotelPictures/WallpaperHotel8.png" alt="">
+                    </div>
+                    <div class="container p-12">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi corporis facere nostrum nesciunt quaerat dicta veritatis repudiandae ipsum quibusdam quis. Aliquam eum numquam corporis impedit, sunt, accusantium voluptatem enim vitae deleniti perferendis ipsam? Quia dolore provident blanditiis delectus velit fugiat totam hic quod perferendis maiores, officiis cupiditate voluptatum et quisquam!</p>
+                    </div>
+                </div>
+                <div class="container pb-12 pl-12 md:pl-0">
+                    <h1 class="text-xl">Inclusion:</h1>
+                    <br>
+                    <ul>
+                        <li>
+                            1 Bed
+                        </li>
+                        <li>
+                            1 Bathroom
+                        </li>
+                        <li>
+                            1 Kitchen
+                        </li>
+                        <li>
+                            1 Dining area
+                        </li>
+                        <li>
+                            1 Veranda
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- King -->
+            <div class="pt-12">
+                <h1 class="text-3xl text-center bg-gradient-to-l from-tertiary via-primaryLight to-tertiary mb-12">King Room</h1>
+                <div class="md:flex md:items-center md:justify-between py-10">
+                    <div class="container block md:hidden">
+                        <img src="../Pictures/HotelPictures/WallpaperHotel8.png" alt="">
+                    </div>
+                    <div class="container p-12 pl-12 md:pl-0 pr-24">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi corporis facere nostrum nesciunt quaerat dicta veritatis repudiandae ipsum quibusdam quis. Aliquam eum numquam corporis impedit, sunt, accusantium voluptatem enim vitae deleniti perferendis ipsam? Quia dolore provident blanditiis delectus velit fugiat totam hic quod perferendis maiores, officiis cupiditate voluptatum et quisquam!</p>
+                    </div>
+                    <div class="container hidden md:block">
+                        <img src="../Pictures/HotelPictures/WallpaperHotel8.png" alt="">
+                    </div>
+                </div>
+                <div class="container pb-12 pl-12 md:pl-0">
+                    <h1 class="text-xl">Inclusion:</h1>
+                    <br>
+                    <ul>
+                        <li>
+                            1 Bed
+                        </li>
+                        <li>
+                            1 Bathroom
+                        </li>
+                        <li>
+                            1 Kitchen
+                        </li>
+                        <li>
+                            1 Dining area
+                        </li>
+                        <li>
+                            1 Veranda
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto text-primaryText " style="font-family: 'Philosopher', sans-serif;">
+            <!-- Junior Suite -->
+            <div class="pt-12">
+                <h1 class="text-3xl text-center bg-gradient-to-l from-tertiary via-primaryLight to-tertiary mb-12">Junior Suite</h1>
+                <div class="md:flex md:items-center md:justify-between py-10">
+                    <div class="container">
+                        <img src="../Pictures/HotelPictures/WallpaperHotel8.png" alt="">
+                    </div>
+                    <div class="container p-12">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi corporis facere nostrum nesciunt quaerat dicta veritatis repudiandae ipsum quibusdam quis. Aliquam eum numquam corporis impedit, sunt, accusantium voluptatem enim vitae deleniti perferendis ipsam? Quia dolore provident blanditiis delectus velit fugiat totam hic quod perferendis maiores, officiis cupiditate voluptatum et quisquam!</p>
+                    </div>
+                </div>
+                <div class="container pb-12 pl-12 md:pl-0">
+                    <h1 class="text-xl">Inclusion:</h1>
+                    <br>
+                    <ul>
+                        <li>
+                            1 Bed
+                        </li>
+                        <li>
+                            1 Bathroom
+                        </li>
+                        <li>
+                            1 Kitchen
+                        </li>
+                        <li>
+                            1 Dining area
+                        </li>
+                        <li>
+                            1 Veranda
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Executive Suite -->
+            <div class="pt-12">
+                <h1 class="text-3xl text-center bg-gradient-to-l from-tertiary via-primaryLight to-tertiary mb-12">Executive Suite</h1>
+                <div class="md:flex md:items-center md:justify-between py-10">
+                    <div class="container block md:hidden">
+                        <img src="../Pictures/HotelPictures/WallpaperHotel8.png" alt="">
+                    </div>
+                    <div class="container p-12 pl-12 md:pl-0 pr-24">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi corporis facere nostrum nesciunt quaerat dicta veritatis repudiandae ipsum quibusdam quis. Aliquam eum numquam corporis impedit, sunt, accusantium voluptatem enim vitae deleniti perferendis ipsam? Quia dolore provident blanditiis delectus velit fugiat totam hic quod perferendis maiores, officiis cupiditate voluptatum et quisquam!</p>
+                    </div>
+                    <div class="container hidden md:block">
+                        <img src="../Pictures/HotelPictures/WallpaperHotel8.png" alt="">
+                    </div>
+                </div>
+                <div class="container pb-12 pl-12 md:pl-0">
+                    <h1 class="text-xl">Inclusion:</h1>
+                    <br>
+                    <ul>
+                        <li>
+                            1 Bed
+                        </li>
+                        <li>
+                            1 Bathroom
+                        </li>
+                        <li>
+                            1 Kitchen
+                        </li>
+                        <li>
+                            1 Dining area
+                        </li>
+                        <li>
+                            1 Veranda
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto text-primaryText " style="font-family: 'Philosopher', sans-serif;">
+            <!-- Presidential Suite -->
+            <div class="pt-12">
+                <h1 class="text-3xl text-center bg-gradient-to-l from-tertiary via-primaryLight to-tertiary mb-12">Presidential Suite</h1>
+                <div class="md:flex md:items-center md:justify-between py-10">
+                    <div class="container">
+                        <img src="../Pictures/HotelPictures/WallpaperHotel8.png" alt="">
+                    </div>
+                    <div class="container p-12">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi corporis facere nostrum nesciunt quaerat dicta veritatis repudiandae ipsum quibusdam quis. Aliquam eum numquam corporis impedit, sunt, accusantium voluptatem enim vitae deleniti perferendis ipsam? Quia dolore provident blanditiis delectus velit fugiat totam hic quod perferendis maiores, officiis cupiditate voluptatum et quisquam!</p>
+                    </div>
+                </div>
+                <div class="container pb-12 pl-12 md:pl-0">
+                    <h1 class="text-xl">Inclusion:</h1>
+                    <br>
+                    <ul>
+                        <li>
+                            1 Bed
+                        </li>
+                        <li>
+                            1 Bathroom
+                        </li>
+                        <li>
+                            1 Kitchen
+                        </li>
+                        <li>
+                            1 Dining area
+                        </li>
+                        <li>
+                            1 Veranda
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Executive Floor -->
+            <div class="pt-12">
+                <h1 class="text-3xl text-center bg-gradient-to-l from-tertiary via-primaryLight to-tertiary mb-12">Executive Floor</h1>
+                <div class="md:flex md:items-center md:justify-between py-10">
+                    <div class="container block md:hidden">
+                        <img src="../Pictures/HotelPictures/WallpaperHotel8.png" alt="">
+                    </div>
+                    <div class="container p-12 pl-12 md:pl-0 pr-24">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi corporis facere nostrum nesciunt quaerat dicta veritatis repudiandae ipsum quibusdam quis. Aliquam eum numquam corporis impedit, sunt, accusantium voluptatem enim vitae deleniti perferendis ipsam? Quia dolore provident blanditiis delectus velit fugiat totam hic quod perferendis maiores, officiis cupiditate voluptatum et quisquam!</p>
+                    </div>
+                    <div class="container hidden md:block">
+                        <img src="../Pictures/HotelPictures/WallpaperHotel8.png" alt="">
+                    </div>
+                </div>
+                <div class="container pb-12 pl-12 md:pl-0">
+                    <h1 class="text-xl">Inclusion:</h1>
+                    <br>
+                    <ul>
+                        <li>
+                            1 Bed
+                        </li>
+                        <li>
+                            1 Bathroom
+                        </li>
+                        <li>
+                            1 Kitchen
+                        </li>
+                        <li>
+                            1 Dining area
+                        </li>
+                        <li>
+                            1 Veranda
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        
+    </section>
+    <!-- Footer -->
+    <footer class="bg-secondaryBackground">
+        <div class="container text-center mx-auto text-primaryText p-6 " style="font-family: 'Philosopher', sans-serif;">
+            <h1 class="text-xl select-none">Sample Design </h1> <h1 class="select-none "> Credit to the owner of the photos</h1> <a href="/" class="select-none">Designed by: BlackHouse Bootcamp 2022</a>
+         </div>
+    </footer>
+</body>
+<script src="../Javascript/HamburgerTransistion.js"></script>
+</html>
